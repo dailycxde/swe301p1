@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bank Transaction System ( SWE301 )</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="balance-display" id="balance-container">
+      <p id="balance">0 TL</p>
+    </div>
+
+    <section class="transaction-section">
+      <h1 class="header-title">SELECT YOUR ACTION</h1>
+
+      <div class="transaction-entry">
+        <label class="label-amount">Withdrawal Amount:</label>
+        <input class="input-amount" id="withdrawal-input" placeholder="Amount to Withdraw">
+        <button class="btn-withdraw" onclick="processWithdrawal()">Withdraw</button>
+      </div>
+
+      <div class="transaction-entry">
+        <label class="label-amount">Deposit Amount:</label>
+        <input class="input-amount" id="deposit-input" placeholder="Amount to Deposit">
+        <button class="btn-deposit" onclick="processDeposit()">Deposit</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
